@@ -1,5 +1,5 @@
 /**
- * Service is the facade of application API
+ * Service is the facade of app API
  * 
  * @author fulan.zjf
  */

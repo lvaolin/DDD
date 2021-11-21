@@ -1,4 +1,4 @@
-package com.dhy.dddboss.web;
+package com.dhy.dddboss.order.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

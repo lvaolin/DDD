@@ -1,4 +1,4 @@
-package com.dhy.dddboss.service;
+package com.dhy.dddboss.order.domain;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cglib.beans.BeanCopier;
