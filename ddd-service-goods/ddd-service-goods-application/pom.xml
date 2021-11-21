@@ -4,24 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.dhy</groupId>
-        <artifactId>ddd-service-order</artifactId>
+        <artifactId>ddd-service-goods</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>ddd-service-order-application</artifactId>
+    <artifactId>ddd-service-goods-application</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
-        <dependency>
-            <groupId>com.dhy</groupId>
-            <artifactId>ddd-service-goods-client</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dhy</groupId>
-            <artifactId>ddd-service-order-client</artifactId>
-            <version>${project.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
@@ -58,7 +48,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>com.dhy</groupId>
+            <artifactId>ddd-service-goods-client</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -93,7 +87,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.dhy.ddd.order.DddOrderApplication</mainClass>
+                    <mainClass>com.dhy.ddd.goods.DddOrderApplication</mainClass>
                     <skip>false</skip>
                 </configuration>
                 <executions>

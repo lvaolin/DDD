@@ -2,12 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.dhy</groupId>
+        <artifactId>ddd-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
     <groupId>com.dhy</groupId>
-    <artifactId>ddd-parent</artifactId>
+    <artifactId>ddd-service-goods</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>ddd-parent</name>
-    <description>DDD</description>
+    <description>商品服务</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -17,8 +21,8 @@
     </properties>
 
     <modules>
-        <module>ddd-service-order</module>
-        <module>ddd-service-goods</module>
+        <module>ddd-service-goods-application</module>
+        <module>ddd-service-goods-client</module>
     </modules>
 
     <dependencyManagement>
@@ -30,7 +34,18 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
+            <dependency>
+                <groupId>com.taobao.arthas</groupId>
+                <artifactId>arthas-spring-boot-starter</artifactId>
+                <version>3.4.8</version>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>2.1.4</version>
+                <type>jar</type>
+            </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>

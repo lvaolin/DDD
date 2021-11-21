@@ -1,7 +1,7 @@
 package com.dhy.ddd.order.domain;
 
+import com.dhy.ddd.order.domain.Address;
 import lombok.Data;
-import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
